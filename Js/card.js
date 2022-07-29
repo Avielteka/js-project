@@ -30,7 +30,7 @@ function printDevicesDetails() {
     
      <div class="card  p-3 ps-5 pe-5 text-black">
             <h4 class="text-center">${item.brand}</h4>
-            <img src="devices/${galleryArray[index]}">
+            <img src="/devices/${galleryArray[index]}">
             <p><b>color:</b> ${item.color}</p>
             <p><b>created:</b> ${item.createdAt}</p>
             <p><b>isAvailable:</b> ${item.isAvailable}</p>

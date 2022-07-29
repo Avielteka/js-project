@@ -1,4 +1,4 @@
-const api = "https://my-json-server.typicode.com/Jeck99/fake-server/devices";
+const api = "https://my-json-server.typicode.com/Jeck99/fake-server/users";
 
 async function getPhones() {
   const response = await fetch(api);
@@ -11,11 +11,10 @@ function printUserInformation() {
         console.log(result);
         document.getElementById("userTable").innerHTML += 
         `<tr>
-            <td>${item.brand}</td>
-            <td>${item.id}</td>
-            <td>${item.price}</td>
-            <td>${item.color}</td>
-            <td>${item.isAvailable}</td>
+            <td>${item.age}</td>
+            <td>${item.email}</td>
+            <td>${item.index}</td>
+            <td>${item.name.first} </td>
             <td><button onclick="deleteUser()" class="bg-danger" >delete</button></td>
        </tr>        
 `;
